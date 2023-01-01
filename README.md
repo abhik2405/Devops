@@ -288,117 +288,32 @@ Reboot the docker user
 sudo reboot
 ```
 
+Launch the instance and got to Build path
 Once Rebooted build Image by following Command 
-
 ```
-sudo docker build . -t todo
-
+sudo docker build . -t todo-job1
 ```
-
 After Successfully image is built run the image by
 
 ```
-sudo docker run --name todo -d -p 8000:800 todo
+sudo docker run -d  --name todo-job1 -p 8000:8000 todo-job1
 ```
 
 Here Container-name --> todo , -d --> detached mode , -p -->Expose port 8000
 
-
-Verify the application is running or not by below URL
-
+To check the state of Docker
 ```
-http:// [public-ip]:8000
+docker ps
 ```
 
-As you can see our application is running successfully 
+Now lets Run the Docker through Jenkins
 
-</br>
-<kbd align="center"><img src="Images/13.jpg"/></kbd>
-</br>
-
-### Step 5:
-
-Let's add a git webhook to implement Continuous Delivery
-
-First Install GitHub Integration Plugin For Jenkins
-Go to Jenkins --> Manage Jenkins --> Manage Plugins
-
-In Available Plugins search for GitHub Integration select the plugin & click on Install without restart
-
-</br>
-<kbd align="center"><img src="Images/14.jpg"/></kbd>
-</br>
-
-Once Installation is done go to your Jenkins & configure After Opening Configuration check the dialog box as shown in the image
-
-</br>
-<kbd align="center"><img src="Images/15.jpg"/></kbd>
-</br>
-
-Check the Dialog Box in build triggers section
-
-Once Done go to Build Steps section click on add build step 
-select execute shell
-And add the below commands as shown in the image
-
-</br>
-<kbd align="center"><img src="Images/16.jpg"/></kbd>
-</br>
+![image](https://user-images.githubusercontent.com/84725860/210182648-7e985832-03bb-4d64-93ff-81b3adfb1b22.png)
 
 
-```
-docker kill todo
-docker rm todo
-docker build . -t todo
-docker run --name todo -p 8000:8000 -d todo
-```
 
 
-After that click on save 
-
-Now go to your GitHub open project repository click on Settings
-In settings click on --> WebHook --> Add Webhook
-Provide the Payload URL as
-
-Jenkins-URL/github-webhook/
 
 
-Refet the below Image for Configurations
 
-</br>
-<kbd align="center"><img src="Images/17.jpg"/></kbd>
-</br>
-
-After that click on Add Webhook
-
-Once Webhook is added go to your EC2 Instance give 
-Jenkins access to run Docker commands by below command 
-
-```
-sudo usermod -a -G docker jenkins
-```
-
-After that restart the jenkins server by below command
-
-```
-sudo systemctl restart jenkins
-```
-
-All the steps are successfully completed
-
-Now try to change the code and push the changes to GIT
-it will run a build and new docker image will be created & it will be automatically going to deploy on your EC2 Instance
-
-</br>
-<kbd align="center"><img src="Images/18.jpg"/></kbd>
-</br>
-
-As you can see in the above image build successfully run by github after pushing code and also title has been change and new image is deployed successfully.
-
-</br>
-<kbd align="center"><img src="Images/19.jpg"/></kbd>
-</br>
-
-
-Follow For More Devops: -
-https://www.linkedin.com/in/devops-learning
+Go to 
