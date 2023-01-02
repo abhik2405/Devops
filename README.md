@@ -209,8 +209,7 @@ You can see build is started Once Done open that build
 
 Go to console output & copy the address
 
-![image](https://user-images.githubusercontent.com/84725860/210177287-796a10d8-35c5-417c-bd7a-988f787a572e.png)
-
+![image](https://user-images.githubusercontent.com/121798037/210229936-34df565e-9dd2-4a0a-af15-7b0de8b59445.png)
 Now open your Instance & change Directory with
 
 ```
