@@ -370,6 +370,8 @@ Once Webhook createds successfully go to jenkins and edit configuration for Buil
 Once all setup is Done if you commit any new change in github 
 New build will automatically start in Jenkins
 
+![image](https://user-images.githubusercontent.com/121798037/210255200-255d99ec-a2fc-4b7f-a171-1972b47ec74b.png)
+
 
 
 
