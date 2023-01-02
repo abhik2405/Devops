@@ -19,9 +19,9 @@
 
 ### Step 1:
 
-Go to your AWS Account & Launch an Ubuntu Instance
+**Go to your AWS Account & Launch an Ubuntu Instance
 Open EC2 -> Instances --> Launch an EC2 Instance
-Select Ubuntu Image
+Select Ubuntu Image**
 
 ![image](https://user-images.githubusercontent.com/84725860/210175095-58852d0b-fbdf-431f-9991-5d12fd35647f.png)
 
@@ -42,20 +42,24 @@ Note: Please Create a new key pair or use existing one to login
 
 ### Step 2: 
 
-Connect to your EC2 Instance to Install Jenkins 
+**Connect to your EC2 Instance to Install Jenkins **
+
 Run below Commands One by One
 
 Update Your System
+
 ```
 sudo apt update
 ```
 
 Install JAVA
+
 ```
 sudo apt install openjdk-11-jre
 ```
 
 Check JAVA Version by running below command
+
 ```
 java -version
 ```
@@ -70,16 +74,13 @@ curl -fsSL https://pkg.jenkins.io/debian/jenkins.io.key | sudo tee \   /usr/shar
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \   https://pkg.jenkins.io/debian binary/ | sudo tee \   /etc/apt/sources.list.d/jenkins.list > /dev/null
 ```
 
-
 ```
 sudo apt-get update 
 ```
 
-
 ```
 sudo apt-get install jenkins
 ```
-
 
 Once Done Enable & Start the Jenkins Service
 
@@ -89,11 +90,13 @@ sudo systemctl enable jenkins
 ```
 
 Starts the Jenkins Service
+
 ```
 sudo systemctl start jenkins
 ```
 
 Check the Service Status
+
 ```
 sudo systemctl status jenkins
 ```
@@ -114,9 +117,9 @@ You can see below screen
 ![image](https://user-images.githubusercontent.com/84725860/210175757-b4d812cf-0c5b-43d4-ae82-58a6f014a113.png)
 
 
-### Step 4:
+### Step 3:
 
-Now Locate your Jenkins Administrator password by command
+**Now Locate your Jenkins Administrator password by command**
 
 
 ```
@@ -126,7 +129,9 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 Enter that password & select Install Suggested Plugins Once Done Provide the Necessary Details & click on Save & Continue
 
+
 Check the Jenkins URL & click on Save & Finish
+
 
 Now Click on Start Using Jenkins you can see below screen 
 
@@ -140,12 +145,12 @@ Once Done Click on save
 
 Before Configuring lets connect Jenkins with GIT using SSH
 
+
 Go to your EC2 Instance & run below command
 
 ```
 ssh-keygen
 ```
-
 
 It will generate public & private key provide public key to GitHub & provide private key for Jenkins
 Access the keys changing the directory to
@@ -157,6 +162,7 @@ ls
 
 
 Now Go to your GitHub & provide the public key as
+
 ```
 cat id_rsa.pub
 ```
@@ -174,9 +180,12 @@ Check Github Project & Provide the Project URL
 
 ![image](https://user-images.githubusercontent.com/84725860/210176794-8781f3d2-481d-45d2-b837-728701cde1e4.png)
 
+
 In Source Code Management select GIT and paste the repository URL 
 
+
 ![image](https://user-images.githubusercontent.com/84725860/210176808-a6e4023d-0322-40fc-830b-c72473590105.png)
+
 
 Now in credentials click on add
 
@@ -189,9 +198,6 @@ In Private key select Entire Directly & paste your Private Key as we copied publ
 ```
 cat id_rsa
 ```
-</br>
-<kbd align="center"><img src="Images/10.jpg"/></kbd>
-</br>
 
 Once Done Check Specifier For me it's main
 
@@ -212,6 +218,7 @@ Now open your Instance & change Directory with
 ```
 cd /var/lib/jenkins/workspace/Item-Name  (todo-job1 is my Item Name)
 ```
+
 Installing Node. js and npm from NodeSource
 
 ```
@@ -219,10 +226,12 @@ sudo apt install nodejs sudo apt install npm
 ```
 
 Install the  requirement for .json
+
 ```
 npm install
 ```
 Install dependencies and then start the app
+
 ```
 node app.js
 ```
@@ -268,18 +277,22 @@ Define the working directory
 WORKDIR app
 ```
 Copy all the files from the project's root to /app
+
 ```
 COPY . .
 ```
 Install node_modules
+
 ```
 RUN npm install
 ```
 This tells Docker your webserver will listen on port 8080
+
 ```
 EXPOSE 8080
 ```
 CMD command specifies the instruction that is to be executed when a Docker container starts
+
 ```
 CMD ["node","app.json"]
 ```
@@ -300,6 +313,7 @@ sudo reboot
 
 Launch the instance and got to Build path
 Once Rebooted build Image by following Command 
+
 ```
 sudo docker build . -t todo-job1
 ```
@@ -312,11 +326,13 @@ sudo docker run -d  --name todo-job1 -p 8000:8000 todo-job1
 Here Container-name --> todo , -d --> detached mode , -p -->Expose port 8000
 
 To check the state of Docker
+
 ```
 docker ps
 ```
 
-Now lets Run the Docker through Jenkins
+###Step 4:-
+**Now lets Run the Docker through Jenkins**
 
 ![image](https://user-images.githubusercontent.com/84725860/210182648-7e985832-03bb-4d64-93ff-81b3adfb1b22.png)
 
@@ -324,6 +340,3 @@ Now lets Run the Docker through Jenkins
 
 
 
-
-
-Go to 
