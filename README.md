@@ -359,6 +359,9 @@ after that click on webhook and add webhook
 
 ![image](https://user-images.githubusercontent.com/121798037/210253226-193711a5-2ca7-479f-b2ee-c27e23e612dc.png)
 
+then enter them jenkins payload URL
+
+![image](https://user-images.githubusercontent.com/121798037/210253895-5746bbd5-2564-4cc5-92b4-599fa587319e.png)
 
 
 
