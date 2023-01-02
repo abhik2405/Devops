@@ -384,8 +384,7 @@ New build will automatically start in Jenkins
 ![image](https://user-images.githubusercontent.com/121798037/210255200-255d99ec-a2fc-4b7f-a171-1972b47ec74b.png)
 
 
-
-#THANK YOU
+# THANK YOU
 
 
 
