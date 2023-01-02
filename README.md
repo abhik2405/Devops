@@ -21,9 +21,9 @@
 
 ### Step 1:
 
-**Go to your AWS Account & Launch an Ubuntu Instance
+***Go to your AWS Account & Launch an Ubuntu Instance
 Open EC2 -> Instances --> Launch an EC2 Instance
-Select Ubuntu Image**
+Select Ubuntu Image***
 
 ![image](https://user-images.githubusercontent.com/84725860/210175095-58852d0b-fbdf-431f-9991-5d12fd35647f.png)
 
@@ -118,8 +118,7 @@ You can see below screen
 
 ### Step 3:
 
-***Now Locate your Jenkins Administrator password by command
-
+***Now Locate your Jenkins Administrator password by command***
 
 ```
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
@@ -325,7 +324,9 @@ To check the state of Docker
 docker ps
 ```
 
-### Step 4:- ***Now lets Run the Docker through Jenkins**
+### Step 4:
+
+***Now lets Run the Docker through Jenkins***
 
 Now let,s run the Docker through jenkins
 
@@ -350,11 +351,15 @@ Then add build steps in execute shell inside jenkins
  
  ![image](https://user-images.githubusercontent.com/121798037/210250920-97da63da-4368-4f0e-8525-0806ba654892.png)
 
-### Step5 ***Install github integration plugin
+### Step5 
+
+***Install github integration plugin***
 
 ![image](https://user-images.githubusercontent.com/121798037/210251206-698a0f38-13e1-40bb-a4b5-75e62ed2e3a5.png)
 
-### Step 6 ***Webhook configuration
+### Step 6 
+
+***Webhook configuration***
 
 In git hub we must have SSH key 
 
@@ -377,6 +382,8 @@ Once all setup is Done if you commit any new change in github
 New build will automatically start in Jenkins
 
 ![image](https://user-images.githubusercontent.com/121798037/210255200-255d99ec-a2fc-4b7f-a171-1972b47ec74b.png)
+
+# THANK YOU
 
 
 
