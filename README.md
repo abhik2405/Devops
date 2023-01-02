@@ -323,13 +323,33 @@ To check the state of Docker
 docker ps
 ```
 
-### Step 4:-
+### Step 4:- **Now lets Run the Docker through Jenkins**
+Now let,s run the Docker through jenkins
 
-**Now lets Run the Docker through Jenkins**
+Give full access to build the path (abhishek is job name)
+```
+sudo chmod 777 /var/lib/jenkins/workspace/abhishek 
+```
 
-![image](https://user-images.githubusercontent.com/84725860/210182648-7e985832-03bb-4d64-93ff-81b3adfb1b22.png)
+Give access to the Docker daemon socket
+```
+sudo usermod -a -G docker jenkins
+```
 
+Restart Your jenkins 
+```
+sudo systemctl restart jenkins
+```
+Then add build steps in execute shell inside jenkins 
+![image](https://user-images.githubusercontent.com/121798037/210250737-edab54ba-52bb-446a-8159-2ed6e9f16e56.png)
+ 
+ Then check port 8000 whether app is working on that port or not
+ ![image](https://user-images.githubusercontent.com/121798037/210250920-97da63da-4368-4f0e-8525-0806ba654892.png)
 
+### Step5
+Install github integration plugin
+
+![image](https://user-images.githubusercontent.com/121798037/210251206-698a0f38-13e1-40bb-a4b5-75e62ed2e3a5.png)
 
 
 
