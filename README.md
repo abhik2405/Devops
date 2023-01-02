@@ -27,7 +27,7 @@ Select Ubuntu Image**
 
 ![image](https://user-images.githubusercontent.com/84725860/210175095-58852d0b-fbdf-431f-9991-5d12fd35647f.png)
 
-***Provide Following Details :
+***Provide Following Details :***
 
 Name = Jenkins-Project-1
 
@@ -44,7 +44,7 @@ Note: Please Create a new key pair or use existing one to login
 
 ### Step 2: 
 
-**Connect to your EC2 Instance to Install Jenkins **
+***Connect to your EC2 Instance to Install Jenkins***
 
 Run below Commands One by One
 
@@ -102,8 +102,6 @@ Check the Service Status
 ```
 sudo systemctl status jenkins
 ```
-
-
 Now Goto Security Group of your EC2 Instance & provide below Inbound Rules & Save Changes
 
 ![image](https://user-images.githubusercontent.com/84725860/210175715-6523bf2e-306d-4e0c-bf21-cdfe23b48500.png)
@@ -120,7 +118,7 @@ You can see below screen
 
 ### Step 3:
 
-***Now Locate your Jenkins Administrator password by command**
+***Now Locate your Jenkins Administrator password by command
 
 
 ```
