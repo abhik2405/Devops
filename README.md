@@ -279,12 +279,14 @@ This tells Docker your webserver will listen on port 8080
 ```
 EXPOSE 8080
 ```
+CMD command specifies the instruction that is to be executed when a Docker container starts
 ```
 CMD ["node","app.json"]
+```
 
 ![image](https://user-images.githubusercontent.com/84725860/210178326-c5bdae65-b710-42c5-8c7d-8725225df829.png)
 
-Give the all Permisssion to docker user
+Add your user to the docker group / If you want to be able to skip sudo for docker commands
 
 ```
 sudo usermode -a -G docker $USER
