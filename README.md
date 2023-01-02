@@ -250,25 +250,32 @@ Now creat the docker file
 
 ```
 vim dockerfile
-
 ```
 
 ![image](https://user-images.githubusercontent.com/84725860/210178076-2534550d-ea81-46d7-ad7e-cd1e4e48aef3.png)
 
+
 Give the commands in that docker file
+
+Install Alpine Linux image with node 12.2.0 
 
 ```
 From node:12.2.0-alpine
 ```
+Define the working directory
+
 ```
 WORKDIR app
 ```
+Copy all the files from the project's root to /app
 ```
 COPY . .
 ```
+Install node_modules
 ```
 RUN npm install
 ```
+This tells Docker your webserver will listen on port 8080
 ```
 EXPOSE 8080
 ```
