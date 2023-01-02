@@ -289,7 +289,7 @@ CMD command specifies the instruction that is to be executed when a Docker conta
 CMD ["node","app.json"]
 ```
 
-![image](https://user-images.githubusercontent.com/84725860/210178326-c5bdae65-b710-42c5-8c7d-8725225df829.png)
+![image](https://user-images.githubusercontent.com/121798037/210257452-4c5ad2a0-d678-4cce-b859-b90734b63f7d.png)
 
 Add your user to the docker group / If you want to be able to skip sudo for docker commands
 
