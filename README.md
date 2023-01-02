@@ -177,13 +177,11 @@ Go to your Project -->  Configure
 
 Check Github Project & Provide the Project URL
 
-![image](https://user-images.githubusercontent.com/121798037/210228626-0f4b8e6d-5191-45ea-96ec-16a9da98b781.png)
-
+![image](https://user-images.githubusercontent.com/121798037/210234023-a2311a9e-dcca-416f-b473-6d1f54959b18.png)
 In Source Code Management select GIT and paste the repository URL 
 
 
-![image](https://user-images.githubusercontent.com/84725860/210176808-a6e4023d-0322-40fc-830b-c72473590105.png)
-
+![image](https://user-images.githubusercontent.com/121798037/210234091-d68ce88b-430d-4148-8fd0-c573bc4b473b.png)
 
 Now in credentials click on add
 
@@ -209,7 +207,7 @@ You can see build is started Once Done open that build
 
 Go to console output & copy the address
 
-![image](https://user-images.githubusercontent.com/121798037/210229936-34df565e-9dd2-4a0a-af15-7b0de8b59445.png)
+![image](https://user-images.githubusercontent.com/121798037/210234236-f55a1099-5a5a-4530-9480-bd35f6b62e56.png)
 Now open your Instance & change Directory with
 
 ```
@@ -235,15 +233,12 @@ node app.js
 
 Now Your App is running on 8000 Port so give the inbound accesss:
 
-![image](https://user-images.githubusercontent.com/84725860/210177628-90d0e1f1-094c-4edc-82f2-b74e57172da3.png)
-
-![image](https://user-images.githubusercontent.com/84725860/210177652-d210d67f-c09f-4167-9eb9-fde2b8b6aa66.png)
-
+![image](https://user-images.githubusercontent.com/121798037/210231166-cab955e8-4d8c-4d88-ac81-6dfc7db36523.png)
+![image](https://user-images.githubusercontent.com/121798037/210231423-82556e79-3d1b-4f08-894d-23e0a5894619.png)
 
 Type the Public ip with 8000 Port:- 
 
-![image](https://user-images.githubusercontent.com/84725860/210177770-73b6bbe5-5f55-44c1-9b09-05d4b6b52b8e.png)
-
+![image](https://user-images.githubusercontent.com/121798037/210234344-93172271-07dc-4741-b639-e61fa4e4da43.png)
 
 Now lets install docker and build the docker image by following commands 
 
