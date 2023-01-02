@@ -363,6 +363,14 @@ then enter them jenkins payload URL
 
 ![image](https://user-images.githubusercontent.com/121798037/210253895-5746bbd5-2564-4cc5-92b4-599fa587319e.png)
 
+Once Webhook createds successfully go to jenkins and edit configuration for Build Triggers
+
+![image](https://user-images.githubusercontent.com/121798037/210254526-b3fdcd0a-a804-4af5-ad86-1756228aee3e.png)
+
+Once all setup is Done if you commit any new change in github 
+New build will automatically start in Jenkins
+
+
 
 
 
