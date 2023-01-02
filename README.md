@@ -211,7 +211,7 @@ Go to console output & copy the address
 Now open your Instance & change Directory with
 
 ```
-cd /var/lib/jenkins/workspace/Item-Name  (todo-job1 is my Item Name)
+cd /var/lib/jenkins/workspace/Item-Name  (abhishek is my Item Name)
 ```
 
 Installing Node. js and npm from NodeSource
