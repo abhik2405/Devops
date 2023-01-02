@@ -351,5 +351,15 @@ Install github integration plugin
 
 ![image](https://user-images.githubusercontent.com/121798037/210251206-698a0f38-13e1-40bb-a4b5-75e62ed2e3a5.png)
 
+### Step 6 :
+In git hub we must have SSH key 
+
+then go to settings of  created repo
+after that click on webhook and add webhook
+
+![image](https://user-images.githubusercontent.com/121798037/210253226-193711a5-2ca7-479f-b2ee-c27e23e612dc.png)
+
+
+
 
 
