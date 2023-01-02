@@ -385,7 +385,7 @@ New build will automatically start in Jenkins
 
 
 
-                                                                   #***THANK YOU***
+#THANK YOU
 
 
 
