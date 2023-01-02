@@ -8,16 +8,12 @@
 
 ### Steps:-
 
+
+
 #### 1. Launch an EC2 Ubuntu Instance with access of HTTP & HTTPS
-
-</br>
-<kbd align="center"><img src="Images/1.jpg"/></kbd>
-</br>
-
-#### 2. Launch an EC2 Ubuntu Instance with access of HTTP & HTTPS
-#### 3. Install Jenkins on Ubuntu Machine
-#### 4. Setup Jenkins & Connect with GIT by Installing Github Integration
-#### 5. Finally Enable the Jenkins Script for CI/CD of Docker Provision Django Application
+#### 2. Install Jenkins on Ubuntu Machine
+#### 3. Setup Jenkins & Connect with GIT by Installing Github Integration
+#### 4. Finally Enable the Jenkins Script for CI/CD of Docker Provision Node.js
 
 
 
@@ -214,18 +210,23 @@ Go to console output & copy the address
 Now open your Instance & change Directory with
 
 ```
-cd /var/lib/jenkins/workspace/Item-Name
+cd /var/lib/jenkins/workspace/Item-Name  (todo-job1 is my Item Name)
 ```
+Installing Node. js and npm from NodeSource
 
 ```
 sudo apt install nodejs sudo apt install npm
-~~~
+```
+
 Install the  requirement for .json
 ```
 npm install
 ```
+Install dependencies and then start the app
+```
 node app.js
 ```
+
 Now Your App is running on 8000 Port so give the inbound accesss:
 
 ![image](https://user-images.githubusercontent.com/84725860/210177628-90d0e1f1-094c-4edc-82f2-b74e57172da3.png)
